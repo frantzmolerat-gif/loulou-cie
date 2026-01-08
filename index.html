@@ -7,6 +7,10 @@
   <meta name="description" content="Loulou-cie (SASU) — solutions numériques terrain et gouvernance de la donnée. JARVIS IA métier : Juste, Agile, Réactif, Insertion, Visionnaire, Système." />
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    .jarvis-title{display:flex;align-items:center;gap:.5rem}
+    .jarvis-mark{display:inline-flex;opacity:.95}
+  </style>
 </head>
 <body>
   <header class="header">
@@ -61,7 +65,15 @@
 
         <div class="hero-card">
           <div class="card">
-            <h2>JARVIS IA métier</h2>
+            <h2 class="jarvis-title">
+              <span class="jarvis-mark" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M12 7v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span>JARVIS IA métier</span>
+            </h2>
             <p>
               <strong>J</strong>uste · <strong>A</strong>gile · <strong>R</strong>éactif · <strong>V</strong>isionnaire ·
               <strong>I</strong>nsertion · <strong>S</strong>ystème
@@ -177,6 +189,40 @@
       </div>
     </section>
 
+    <section id="mentions" class="section section-alt">
+      <div class="container">
+        <h2>Mentions légales & cadre d’usage</h2>
+
+        <div class="grid2">
+          <div class="offer">
+            <h3>Éditeur</h3>
+            <p class="muted">
+              <strong>Loulou-cie</strong><br />
+              Société en cours de structuration (SASU)<br />
+              France<br />
+              Contact : <a href="mailto:jarvisbylouloucie@loulou-cie.org">jarvisbylouloucie@loulou-cie.org</a>
+            </p>
+          </div>
+
+          <div class="offer">
+            <h3>Propriété intellectuelle</h3>
+            <p class="muted">
+              L’ensemble des contenus de ce site (textes, structure, marque d’usage JARVIS IA métier)
+              est protégé par le droit de la propriété intellectuelle.
+            </p>
+          </div>
+        </div>
+
+        <div class="note">
+          <strong>Cadre d’usage :</strong> JARVIS IA métier est une approche méthodologique et outillée.
+          Il ne désigne pas une IA générative. Les noms, marques et organisations cités le sont à titre
+          de <strong>partenaires</strong>, d’<strong>environnements</strong> ou de <strong>contexte d’usage</strong>,
+          sans mandat ni représentation officielle. Le terme générique <em>« éco-organismes »</em> peut
+          désigner une catégorie d’acteurs, sans viser une organisation spécifique.
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="section section-cta">
       <div class="container">
         <div class="cta-card">
@@ -201,12 +247,18 @@
         <div>
           <div class="footer-title">Loulou-cie</div>
           <div class="muted">Voir autrement · IA métier · Numérique terrain</div>
+          <div class="muted" style="margin-top:6px; font-size:0.85em;">
+            © 2026 Loulou-cie. JARVIS IA métier est une approche et une marque d’usage.
+            Les noms, marques et organisations cités le sont à titre d’environnement,
+            de partenaires ou de contexte d’usage, sans mandat ni représentation officielle.
+          </div>
         </div>
       </div>
       <div class="footer-right">
         <a href="#jarvis">Jarvis</a>
         <a href="#services">Offres</a>
         <a href="#valeurs">Valeurs</a>
+        <a href="#mentions">Mentions</a>
       </div>
     </div>
   </footer>
