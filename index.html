@@ -9,14 +9,28 @@
   <link rel="stylesheet" href="styles.css" />
   <style>
     .jarvis-title{display:flex;align-items:center;gap:.5rem}
-    .jarvis-mark{display:inline-flex;opacity:.95}
+    .jarvis-mark{display:inline-flex;opacity:1}
+    .jarvis-mark img{width:22px;height:22px;display:block;object-fit:contain}
+    .brand-logos {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .logo-jarvis-main {
+      width: 28px;
+      height: 28px;
+      object-fit: contain;
+    }
   </style>
 </head>
 <body>
   <header class="header">
     <div class="container header-inner">
       <a class="brand" href="#">
-        <img src="assets/logo-loulou-cie.svg" alt="Loulou-cie" class="logo" />
+        <span class="brand-logos">
+          <img src="assets/logo-loulou-cie.svg" alt="Loulou-cie" class="logo" />
+          <img src="assets/logo-jarvis.png" alt="JARVIS IA métier" class="logo-jarvis-main" />
+        </span>
         <span class="brand-text">
           <span class="brand-name">Loulou-cie</span>
           <span class="brand-tagline">Voir autrement</span>
@@ -67,10 +81,7 @@
           <div class="card">
             <h2 class="jarvis-title">
               <span class="jarvis-mark" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
-                  <path d="M12 7v6l4 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
+                <img src="assets/logo-jarvis.png" alt="" />
               </span>
               <span>JARVIS IA métier</span>
             </h2>
