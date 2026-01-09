@@ -10,15 +10,15 @@
   <style>
     .jarvis-title{display:flex;align-items:center;gap:.5rem}
     .jarvis-mark{display:inline-flex;opacity:1}
-    .jarvis-mark img{width:22px;height:22px;display:block;object-fit:contain}
+    .jarvis-mark img{width:26px;height:26px;display:block;object-fit:contain}
     .brand-logos {
       display: flex;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
     }
     .logo-jarvis-main {
-      width: 36px;
-      height: 36px;
+      width: 72px;
+      height: 72px;
       object-fit: contain;
     }
     .footer-logos {
@@ -28,16 +28,30 @@
       flex: 0 0 auto;
     }
     .footer-logo-loulou {
-      width: 34px;
-      height: 34px;
+      width: 40px;
+      height: 40px;
       display: block;
       object-fit: contain;
     }
     .footer-logo-jarvis {
-      width: 34px;
-      height: 34px;
+      width: 56px;
+      height: 56px;
       display: block;
       object-fit: contain;
+    }
+    :root {
+      --jarvis-green: #00813a;
+      --jarvis-green-dark: #064b25;
+      --jarvis-green-light: #e4eee8;
+    }
+    .brand-name {
+      color: var(--jarvis-green);
+    }
+    .footer {
+      border-top: 1px solid var(--jarvis-green-light);
+    }
+    .footer-title {
+      color: var(--jarvis-green);
     }
   </style>
 </head>
@@ -46,8 +60,7 @@
     <div class="container header-inner">
       <a class="brand" href="#">
         <span class="brand-logos">
-          <img src="assets/logo-loulou-cie.svg" alt="Loulou-cie" class="logo" />
-          <img src="assets/jarvis_logo.png" alt="JARVIS IA métier" class="logo-jarvis-main" />
+          <img src="assets/jarvis_logo.png" alt="JARVIS IA métier" class="logo-jarvis-main" style="filter:none;" />
         </span>
         <span class="brand-text">
           <span class="brand-name">Loulou-cie</span>
@@ -112,6 +125,9 @@
               <li>Cohérence entrée/sortie + contrôles qualité (vérifications, alertes)</li>
               <li>Connecteurs & interopérabilité (CSV/Excel/API selon gouvernance)</li>
               <li>Tableaux de pilotage & veille (indicateurs, incidents, suivi)</li>
+              <li>Jarvis Diagnostic (symptômes, contrôles, scoring) — suivi agrégé, non intrusif</li>
+              <li>Jarvis Étiquettes & Édition (papier) — impression guidée des retours de cohérence (tunnel de correction)</li>
+              <li>Jarvis Hub & Lots (flux, lots, rupture de charge) — pilotage agrégé, sans exposition sensible</li>
             </ul>
             <div class="card-actions">
               <a class="btn btn-sm" href="#services">Voir les modules</a>
@@ -162,6 +178,18 @@
           <div class="feature">
             <h3>Cohérence & bases de données</h3>
             <p>Contrôles de cohérence à partir des bases de données, règles métiers, détection d’anomalies et levée de doute structurée.</p>
+          </div>
+          <div class="feature">
+            <h3>Jarvis Diagnostic</h3>
+            <p>Diagnostic produit & aide SAV : symptômes, contrôles guidés, causes probables, pistes de pièces. Suivi volontaire et agrégé (pas de suivi individuel intrusif).</p>
+          </div>
+          <div class="feature">
+            <h3>Jarvis Étiquettes & Édition</h3>
+            <p>Édition papier utile au terrain : étiquettes, fiches et synthèses. Permet de matérialiser les retours du “tunnel de cohérence” (lots de correction) pour un usage simple en atelier.</p>
+          </div>
+          <div class="feature">
+            <h3>Jarvis Hub & Lots</h3>
+            <p>Gestion des flux et des lots (hub, expéditions, rupture de charge). Vision pilotage agrégée et traçabilité des étapes, sans exposition de données sensibles.</p>
           </div>
         </div>
       </div>
@@ -273,7 +301,6 @@
     <div class="container footer-inner">
       <div class="footer-left">
         <div class="footer-logos">
-          <img src="assets/logo-loulou-cie.svg" alt="Loulou-cie" class="footer-logo-loulou" />
           <img src="assets/jarvis_logo.png" alt="JARVIS IA métier" class="footer-logo-jarvis" />
         </div>
         <div>
