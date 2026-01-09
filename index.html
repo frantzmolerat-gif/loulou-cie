@@ -17,8 +17,26 @@
       gap: 14px;
     }
     .logo-jarvis-main {
-      width: 28px;
-      height: 28px;
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+    .footer-logos {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex: 0 0 auto;
+    }
+    .footer-logo-loulou {
+      width: 34px;
+      height: 34px;
+      display: block;
+      object-fit: contain;
+    }
+    .footer-logo-jarvis {
+      width: 34px;
+      height: 34px;
+      display: block;
       object-fit: contain;
     }
   </style>
@@ -29,7 +47,7 @@
       <a class="brand" href="#">
         <span class="brand-logos">
           <img src="assets/logo-loulou-cie.svg" alt="Loulou-cie" class="logo" />
-          <img src="assets/logo-jarvis.png" alt="JARVIS IA métier" class="logo-jarvis-main" />
+          <img src="assets/jarvis_logo.png" alt="JARVIS IA métier" class="logo-jarvis-main" />
         </span>
         <span class="brand-text">
           <span class="brand-name">Loulou-cie</span>
@@ -81,7 +99,7 @@
           <div class="card">
             <h2 class="jarvis-title">
               <span class="jarvis-mark" aria-hidden="true">
-                <img src="assets/logo-jarvis.png" alt="" />
+                <img src="assets/jarvis_logo.png" alt="" />
               </span>
               <span>JARVIS IA métier</span>
             </h2>
@@ -254,7 +272,10 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-left">
-        <img src="assets/logo-loulou-cie.svg" alt="" class="logo small" />
+        <div class="footer-logos">
+          <img src="assets/logo-loulou-cie.svg" alt="Loulou-cie" class="footer-logo-loulou" />
+          <img src="assets/jarvis_logo.png" alt="JARVIS IA métier" class="footer-logo-jarvis" />
+        </div>
         <div>
           <div class="footer-title">Loulou-cie</div>
           <div class="muted">Voir autrement · IA métier · Numérique terrain</div>
