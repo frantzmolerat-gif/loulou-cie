@@ -53,7 +53,11 @@
     .footer-title {
       color: var(--jarvis-green);
     }
-  </style>
+  
+.jarvis-acro{display:flex;align-items:center;gap:14px;margin:.6rem 0 1rem 0}
+.jarvis-acro-logo img{width:64px;height:64px;object-fit:contain;display:block}
+.jarvis-acro-words{line-height:1.35;font-size:14px}
+</style>
 </head>
 <body>
   <header class="header">
@@ -116,10 +120,19 @@
               </span>
               <span>JARVIS IA métier</span>
             </h2>
-            <p>
-              <strong>J</strong>uste · <strong>A</strong>gile · <strong>R</strong>éactif · <strong>V</strong>isionnaire ·
-              <strong>I</strong>nsertion · <strong>S</strong>ystème
-            </p>
+            <div class="jarvis-acro">
+              <div class="jarvis-acro-logo">
+                <img src="assets/logo-jarvis.png" alt="JARVIS" />
+              </div>
+              <div class="jarvis-acro-words" aria-label="JARVIS : Juste, Agile, Réactif, Visionnaire, Insertion, Système">
+                <div><strong>Juste</strong></div>
+                <div>Agile</div>
+                <div>Réactif</div>
+                <div>Visionnaire</div>
+                <div>Insertion</div>
+                <div>Système</div>
+              </div>
+            </div>
             <ul class="bullets">
               <li>Collecte & tri terrain (mobile, parcours guidés, QR typés)</li>
               <li>Cohérence entrée/sortie + contrôles qualité (vérifications, alertes)</li>
@@ -264,8 +277,9 @@
           <div class="offer">
             <h3>Propriété intellectuelle</h3>
             <p class="muted">
-              L’ensemble des contenus de ce site (textes, structure, marque d’usage JARVIS IA métier)
-              est protégé par le droit de la propriété intellectuelle.
+              &bull; <b>Protection</b> : textes, design, structure, illustrations, logos, &eacute;l&eacute;ments de marque.<br />
+              &bull; <b>Droits</b> : sauf mention contraire, propri&eacute;t&eacute; de <b>LOULOU-CIE SASU</b> et/ou des auteurs.<br />
+              &bull; <b>Interdiction</b> : reproduction, repr&eacute;sentation, adaptation ou diffusion (totale ou partielle) sans autorisation &eacute;crite pr&eacute;alable.
             </p>
           </div>
         </div>
@@ -277,6 +291,7 @@
           sans mandat ni représentation officielle. Le terme générique <em>« éco-organismes »</em> peut
           désigner une catégorie d’acteurs, sans viser une organisation spécifique.
         </div>
+        <p class="mini-text" style="margin-top:10px;">🔒 <strong>Protection des données personnelles</strong> — <a href="privacy.html">Consulter la politique (RGPD_JARVIS_V1)</a></p>
       </div>
     </section>
 
