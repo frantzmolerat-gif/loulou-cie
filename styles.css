@@ -165,3 +165,21 @@ a{color:inherit; text-decoration:none}
   .mini-grid{grid-template-columns: 1fr}
   .cta-card{flex-direction:column; align-items:flex-start}
 }
+
+/* RGPD / Privacy footer (V1) */
+.rgpdFooter{
+  margin:24px 0 0;
+  padding:16px 16px;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:14px;
+  background: rgba(0,0,0,.02);
+  font-size:14px;
+  line-height:1.45;
+}
+.rgpdFooter__title{font-weight:700;margin-bottom:6px;}
+.rgpdFooter__text{opacity:.92;}
+.rgpdFooter__text a{text-decoration:underline;}
+.rgpdFooter__ref{opacity:.75;}
+@media (max-width: 640px){
+  .rgpdFooter{padding:14px 12px;font-size:13px;}
+}
